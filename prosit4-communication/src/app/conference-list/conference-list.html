@@ -1,0 +1,10 @@
+<h2>Liste des conférences</h2>
+
+@for (c of conferences(); track c.id) {
+  <div class="card" (click)="select(c)">
+    <h3>{{ c.title | uppercase }}</h3>
+    <p>{{ c.date | date:'dd/MM/yyyy' }} - {{ c.place }}</p>
+  </div>
+} @empty {
+  <p>Aucune conférence enregistrée.</p>
+}

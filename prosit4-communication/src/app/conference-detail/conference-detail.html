@@ -1,0 +1,8 @@
+@if (conference(); as c) {
+  <h2>{{ c.title }}</h2>
+  <p>{{ c.description }}</p>
+  <p>{{ c.date | date:'fullDate' }} - {{ c.place }}</p>
+  <p>Participants : {{ c.nbParticipants }} / {{ c.maxParticipants }}</p>
+} @else {
+  <p>Sélectionnez une conférence pour voir ses détails.</p>
+}

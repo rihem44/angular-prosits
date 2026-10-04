@@ -1,0 +1,2 @@
+.card { border: 1px solid #ccc; padding: 12px; margin: 8px; cursor: pointer; }
+.card:hover { background: #f2f2f2; }
